@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gladio-nome-fab {
+  margin-top: 10px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 30px;
+}
+
+.logoImage {
+  width: 80px;
+  height: auto;
+}
+
+@media (max-width: 1160px) {
+  .logos {
+    gap: 2rem;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+}

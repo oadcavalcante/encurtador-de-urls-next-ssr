@@ -1,2 +1,0 @@
-# Modifique o nome desse arquivo para .env e altere o que for necessário.
-DATABASE_URL="postgresql://postgres:root@localhost:5432/encurtador_db"

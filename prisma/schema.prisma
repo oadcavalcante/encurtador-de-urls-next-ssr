@@ -1,15 +1,15 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
-generator client {
-  provider = "prisma-client-js"
-}
-
 model Url {
-  id        Int      @id @default(autoincrement())
-  original  String
-  short     String   @unique
-  createdAt DateTime @default(now())
+  id          Int      @id @default(autoincrement())
+  originalUrl String
+  shortUrl    String    @unique
+  createdAt   DateTime  @default(now())
 }

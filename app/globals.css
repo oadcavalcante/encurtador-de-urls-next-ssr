@@ -15,7 +15,19 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background-image: url("/images/fundo-portal.jpg");
   font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 4rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }

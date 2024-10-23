@@ -1,16 +1,24 @@
 import "./globals.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Head from "next/head";
 
-export const metadata = {
-  title: "Encurtador de URLs",
-  description: "Uma aplicação simples de encurtamento de URLs",
-};
+if (typeof window !== "undefined") {
+  require("bootstrap/dist/js/bootstrap.bundle.min.js");
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt">
+    <html lang="pt-BR">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>Home | Encurtador de URLs</title>
+      </Head>
       <body>
-        <header>{/* <h1>Encurtador de URLs</h1> */}</header>
-        <main>{children}</main>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );
